@@ -1,12 +1,19 @@
 # Towards Floating Point-Based AI Acceleration: Hybrid PIM with Non-Uniform Data Format and Reduced Multiplications
 
-Here, we provide example scripts for the PN parameter search and model quantization based on PN format.
+## 🛠️ PIM-oriented Non-uniformed Data Format (PN)
+
+In this paper, we design a non-uniform data format for PIM architecture, named PN. Ideally, the PN format can be adjusted by changing its bit scaling factors to fit different types of non-uniform data formats (FP, NF, ...).
+
+Here, we provide example scripts for the fixed PN parameter search targeting NF format.
 
 * Fixed PN parameter search
 
   ```
   python quant/pn_search.py
   ```
+
+## 🧪 Algorithm Evaluation
+After searching for the appropriate PN format parameters, the model weights can be quantized offline and evaluated on the target dataset.
 * Model Quantization and Evaluation
 
   ```
